@@ -2,7 +2,7 @@
   "name": "github-website",
   "version": "0.1.1",
   "private": true,
-  "homepage": "http://jplamb.github.io/jplamb.github.io",
+  "homepage": "https://jplamb.github.io/jplamb.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
