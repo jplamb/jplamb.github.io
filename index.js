@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-import { Navbar, Nav, Button, Container, Row, Col, Card, ThemeProvider } from 'react-bootstrap';
+const { Navbar, Nav, Button, Container, Row, Col, Card, ThemeProvider } = require('react-bootstrap');
 
 const theme = {
   colors: {
