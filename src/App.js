@@ -11,7 +11,7 @@ function App() {
       {/* Navigation Bar */}
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">Your Name</Navbar.Brand>
+          <Navbar.Brand href="#home">John Lamb</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
