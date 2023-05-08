@@ -74,11 +74,11 @@ function App() {
               <Card>
                 <Card.Img variant="top" alt="Wordle, abstract" src={wordleImage} />
                 <Card.Body>
-                  <Card.Title>WordleBot (coming soon)</Card.Title>
+                  <Card.Title>WordleBot 2.0</Card.Title>
                   <Card.Text>
-                    A rethinking of a bot I wrote to play NYTimes' Wordle. It uses information theory to pick the best word to guess next.
+                    A rethinking of a bot I wrote to play NYTimes' Wordle. Using information theory it tries to solve most puzzles in three guesses.
                   </Card.Text>
-                  <Button variant="primary" href="https://github.com/jplamb/" target="_blank">
+                  <Button variant="primary" href="https://github.com/jplamb/wordle" target="_blank">
                     View Project
                   </Button>
                 </Card.Body>
