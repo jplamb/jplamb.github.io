@@ -3,6 +3,8 @@ import './App.css';
 import { Container, Row, Col, Navbar, Nav, Card, Button, Jumbotron } from 'react-bootstrap';
 import profileImage from './assets/RenderedImage.JPG';
 import wordleImage from './assets/wordle.png';
+import keyboardImage from './assets/keyboard.png';
+import craftsmanImage from './assets/craftsman.png';
 
 
 function App() {
@@ -27,7 +29,7 @@ function App() {
       <section className="bg-light text-center py-5">
         <Container>
           <h1 className="display-4">John Lamb</h1>
-          <p className="lead">Full Stack  Developer | Innovation</p>
+          <p className="lead">Full Stack  Developer | Innovator | Writer</p>
         </Container>
       </section>
 
@@ -36,29 +38,69 @@ function App() {
         <Container>
           <h2>About</h2>
           <Row>
-            <Col md={4}>
+            <Col md={3}>
                 <img src={profileImage} alt="John Lamb" className="img-fluid rounded" />
             </Col>
-            <Col md={8}>
+            <Col md={6}>
               <p>
-                Hi, I'm a software engineer based in Austin, TX with experience writing full stack
-                applications. I most recently worked at Indeed.com in their internal Incubator. It's a group dedicated
-                to new product innovation and each product is treated like a startup.
+                Hi there! My name is John Lamb based out of Austin, TX. I like to say I moved here for the tacos. I
+                started saying that as a joke, but like all jokes, there's a seed of truth to it. And I'm not going to
+                pretend like that seed hasn't been growing.
               </p>
-              <p>
-                In March 2023, Indeed announced layoffs affecting 15% of their workforce, including me.
-                While this was disappointing news, it's reassuring to know it was done to right-size the business
-                and not for performance reasons.
-              </p>
-              <p>
-                In the meantime, I'm taking a writing course called Write of Passage. It's a 5 week course that
-                teaches writing as a method to improve one's thinking. I hope this sharpens my communication skills
-                and helps me connect with others. You can read what my latest writing on my <a href="https://sheepandgoats.substack.com/">Substack</a>
-              </p>
-              <p>
-                I'm current looking for a role as a tech lead or engineering manager. If you're hiring,&nbsp;
-                <a href="mailto:j.lamb13@gmail.com">please reach out</a>!
-              </p>
+              </Col>
+          </Row>
+        </Container>
+      </section>
+        <section id="professionally" className="py-5">
+        <Container>
+          <h2>Professionally</h2>
+          <Row>
+            <Col md={7}>
+                <p>
+                    I'm a software engineer based in Austin, TX with experience writing full stack
+                    applications. I most recently worked at Indeed.com in their internal Incubator. It's a group dedicated
+                    to new product innovation and each product is treated like a startup.
+                </p>
+                <p>
+                    In March 2023, Indeed announced layoffs affecting 15% of their workforce, including me.
+                    While this was disappointing news, it's reassuring to know it was done to right-size the business
+                    and not for performance reasons.
+                </p>
+                <p>
+                    I'm current looking for a senior-level full stack engineer or tech lead. If you're hiring,&nbsp;
+                    <a href="mailto:j.lamb13@gmail.com">please reach out</a>!
+                </p>
+            </Col>
+              <Col md={3}>
+                <img src={keyboardImage} alt="John Lamb" className="img-fluid rounded" />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section id="unprofessionally" className="py-5">
+        <Container>
+          <h2>Un-Professionally</h2>
+          <Row>
+              <Col md={4}>
+                <img src={craftsmanImage} alt="John Lamb" className="img-fluid rounded" />
+            </Col>
+            <Col md={6}>
+                <p>
+                    I can't help but think about the things humans create, like society, technology, and tools, and I
+                    like to write about how those things impact people.
+                </p>
+                <p>
+                    Outside of writing, I fill my days as a software engineer which explains the thinking about
+                    systems. But perhaps a better way explaining who I am is with a short anecdote. When I was a small
+                    lad, I used to pepper my mom with questions about the world.  I would point at a man on a bike and
+                    ask "where is he going?", "why is he riding a bike?". I don't think I ever stopped asking questions
+                    about the world, they just weren't spoken out loud as often. Maybe because good answers are hard to
+                    find, especially to the most interesting question: why?
+                </p>
+                <p>
+                    You can find my writing over&nbsp;
+                    <a href="https://sheepandgoats.substack.com/">here on Substack</a>. It's completely free.
+                </p>
             </Col>
           </Row>
         </Container>
