@@ -124,6 +124,15 @@ function App() {
                     View Project
                   </Button>
                 </Card.Body>
+                  <Card.Body>
+                  <Card.Title>BudgetApp (WIP)</Card.Title>
+                  <Card.Text>
+                    A simple budgeting app I've worked on to refresh my coding skills. It's based on a complex spreadsheet I've created over the years.
+                  </Card.Text>
+                  <Button variant="primary" href="https://github.com/jplamb/budget_app" target="_blank">
+                    View Project
+                  </Button>
+                </Card.Body>
               </Card>
             </Col>
 
