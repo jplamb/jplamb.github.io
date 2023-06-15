@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Container, Row, Col, Navbar, Nav, Card, Button, Jumbotron } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav, Card, Button } from 'react-bootstrap';
 import profileImage from './assets/RenderedImage.JPG';
 import wordleImage from './assets/wordle.png';
 import keyboardImage from './assets/keyboard.png';
 import craftsmanImage from './assets/craftsman.png';
+import funDollarImage from './assets/FunDollar.png';
 
 
 function App() {
@@ -124,7 +125,12 @@ function App() {
                     View Project
                   </Button>
                 </Card.Body>
-                  <Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card>
+                <Card.Img variant="top" alt="Budget, abstract" src={funDollarImage} />
+                <Card.Body>
                   <Card.Title>BudgetApp (WIP)</Card.Title>
                   <Card.Text>
                     A simple budgeting app I've worked on to refresh my coding skills. It's based on a complex spreadsheet I've created over the years.
