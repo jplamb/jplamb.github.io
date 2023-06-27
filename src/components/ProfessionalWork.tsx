@@ -80,12 +80,15 @@ class CardComponent extends React.Component<{ cardData: CardData }> {
   render() {
     const { cardData } = this.props;
     return (
-      <Col className="d-flex justify-content-center">
-        <Card className="" style={{ maxWidth: "22vw", height: "55vh" }}>
-          <cardData.img size={45} color="white" className="mt-3 mx-auto" />
+      <Col className="d-flex justify-content-center" sm={7} md={5} lg={4}>
+        <Card className="mb-4" style={{}}>
+          <cardData.img
+            size={"1.5rem"}
+            color="white"
+            className="mt-3 mx-auto"
+          />
           <Card.Body>
             <Card.Title>{cardData.header}</Card.Title>
-
             <Card.Text>
               <div className="d-flex align-items-center justify-content-center">
                 {cardData.employer === "Indeed.com" ? (
@@ -126,7 +129,7 @@ const ProfessionalWork: React.FC<ProfessionalWorkProps> = ({ id }) => {
     <section id={id} className="mt-5 mb-5">
       <Container>
         <h1 className="pb-2">Professional Experience</h1>
-        <Row className="">
+        <Row className="justify-content-center">
           {cardsData.map((data, index) => (
             <CardComponent key={index} cardData={data} />
           ))}

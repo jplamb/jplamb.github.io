@@ -39,7 +39,7 @@ class RecommendationCard extends React.Component<{ data: CardData }> {
   render() {
     const { data } = this.props;
     return (
-      <Card className="h-100">
+      <Card className="h-100 pb-3">
         <Card.Body className="d-flex flex-column justify-content-center">
           <blockquote className="blockquote mx-auto">
             <p className="mb-4" style={{ fontSize: "0.9rem" }}>

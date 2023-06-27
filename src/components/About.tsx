@@ -16,7 +16,7 @@ const aboutMeText = [
     "from 0 to 1.",
   "Previously, I worked at Cubic Corp on DARPA contracts on a mix of frontend projects and AI powered " +
     "experiments. I wrote a rudimentary reinforcement learning AI with the goal of completing missions alongside " +
-    "soliders in a simulated environment. I also improved predictive models for mass transit systems and worked on a " +
+    "soldiers in a simulated environment. I also improved predictive models for mass transit systems and worked on a " +
     "frontend heavy system designed to assist soldiers conduct cyberwarfare.",
 ];
 
@@ -25,7 +25,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
     <section id={id} className="mt-5 mb-5">
       <Card
         className="card text-white bg-dark mb-3"
-        style={{ width: "60vw", margin: "0 auto" }}
+        style={{ maxWidth: "60vw", margin: "0 auto" }}
       >
         <Card.Header className="text-center">
           <h1>About me</h1>

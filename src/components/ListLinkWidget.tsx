@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroupItem } from "react-bootstrap";
+import { Col, ListGroupItem } from "react-bootstrap";
 import { LinkData } from "../Utils/LinkData";
 
 interface ListLinkWidgetProps {
@@ -12,8 +12,8 @@ const ListLinkWidget: React.FC<ListLinkWidgetProps> = ({
   return (
     <ListGroupItem>
       <a style={{ color: "inherit", textDecoration: "none" }} href={url}>
-        {image}
-        &nbsp;&nbsp;{name}
+        <Col className="">{image}</Col>
+        <Col className="d-none d-sm-block">&nbsp;&nbsp;{name}</Col>
       </a>
     </ListGroupItem>
   );

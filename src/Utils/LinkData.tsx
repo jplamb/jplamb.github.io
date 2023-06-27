@@ -9,7 +9,7 @@ export interface LinkData {
 }
 export const LinkWidgetData: LinkData[] = [
   {
-    image: <BsGithub size={24} />,
+    image: <BsGithub size={"1.5rem"} />,
     name: "Github",
     url: "https://github.com/jplamb",
   },

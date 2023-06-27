@@ -7,12 +7,15 @@ interface HomeProps {
 }
 const Home: React.FC<HomeProps> = ({ id }) => {
   return (
-    <section id={id} style={{ background: "black" }}>
+    <section id={id} style={{ background: "#07070d" }}>
       <Card
-        className="text-center splash-background vh-100 align-items-center justify-content-center"
+        className="text-center splash-background align-items-center justify-content-center"
         style={{
-          backgroundSize: "cover",
-
+          backgroundSize: "contain",
+          height: "56.25vw",
+          maxHeight: "100vh",
+          width: "100vw",
+          maxWidth: "177.78vh",
           background: `url(${spaceBackground}) no-repeat center center`,
         }}
       >

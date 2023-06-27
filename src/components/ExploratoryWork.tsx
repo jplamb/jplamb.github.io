@@ -40,9 +40,9 @@ class ProjectCard extends React.Component<{ projectData: ProjectData }> {
   render() {
     const { projectData } = this.props;
     return (
-      <Col md={4}>
+      <Col xs={6} sm={6} md={6} lg={5}>
         <Card className="pr-0 mr-0">
-          <Image src={projectData.img} />
+          <Image src={projectData.img} rounded fluid />
           <Card.Body>
             <Card.Title>{projectData.header}</Card.Title>
             <Card.Text className="text-body-secondary fs-6">
@@ -66,7 +66,7 @@ const ExploratoryWork: React.FC<ExploratoryWorkProps> = ({ id }) => {
     <section id={id} className="mt-5 mb-5">
       <Container>
         <h1 className="pb-2">Exploratory Work</h1>
-        <Row className="">
+        <Row className="justify-content-center">
           {projectsData.map((data, index) => (
             <ProjectCard key={index} projectData={data} />
           ))}
